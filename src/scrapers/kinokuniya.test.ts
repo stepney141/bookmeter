@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { Ok } from "../../../.libs/lib";
+import { Ok } from "../../.libs/lib";
 import { makeEmptyBook } from "../domain/book";
 
 import { buildExistingDescriptionMap, buildKinokuniyaBookUrl, canFetchKinokuniyaDescription } from "./kinokuniya";

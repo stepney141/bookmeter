@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import type { Browser } from "puppeteer";
 
-import { Ok } from "../../../.libs/lib";
+import { Ok } from "../../.libs/lib";
 
 vi.mock("../scrapers/kinokuniya", async () => {
   const actual = await vi.importActual<typeof import("../scrapers/kinokuniya")>("../scrapers/kinokuniya");

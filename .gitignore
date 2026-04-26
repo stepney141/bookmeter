@@ -1,0 +1,36 @@
+node_modules
+*/node_modules
+
+.logs
+
+.env
+*/.env
+env.json
+
+*/*_cookie.json
+
+test.png
+*/test.png
+*test*.png
+*/*test*.png
+
+qiita_lgtm/*.png
+
+deviantart_api/img
+deviantart_api/json
+
+.codex
+
+*.sqlite-shm
+*.sqlite-wal
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv

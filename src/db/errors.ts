@@ -2,7 +2,7 @@
  * db モジュールで使用するエラー型定義。
  */
 
-import { BaseError } from "../../../.libs/lib";
+import { BaseError } from "../../.libs/lib";
 
 export type DbErrorContext =
   | { type: "loadFailed"; tableName: string }

@@ -6,7 +6,7 @@
 import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 
-import { CHROME_ARGS } from "../../../.libs/constants";
+import { CHROME_ARGS } from "../../.libs/constants";
 
 import type { Browser } from "puppeteer";
 

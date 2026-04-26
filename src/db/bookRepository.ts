@@ -5,14 +5,14 @@
 
 import { eq, sql } from "drizzle-orm";
 
-import { Err, Ok } from "../../../.libs/lib";
-import { exportFile } from "../../../.libs/utils";
+import { Err, Ok } from "../../.libs/lib";
+import { exportFile } from "../../.libs/utils";
 
 import { DbError } from "./errors";
 import { wishTable, stackedTable } from "./schema";
 
 import type { DbClient } from "./client";
-import type { Result } from "../../../.libs/lib";
+import type { Result } from "../../.libs/lib";
 import type { Book, BookList } from "../domain/book";
 import type { ASIN, ISBN10 } from "../domain/isbn";
 

@@ -3,11 +3,11 @@
  * DB 判定やブラウザのライフサイクルは呼び出し側に委譲する。
  */
 
-import { $x } from "../../../.libs/pptr-utils";
-import { sleep } from "../../../.libs/utils";
+import { $x } from "../../.libs/pptr-utils";
+import { sleep } from "../../.libs/utils";
 import { isAsin, isIsbn10, routeIsbn10, convertISBN10To13 } from "../domain/isbn";
 
-import type { Result } from "../../../.libs/lib";
+import type { Result } from "../../.libs/lib";
 import type { DbError } from "../db/errors";
 import type { BookList } from "../domain/book";
 import type { ISBN10 } from "../domain/isbn";

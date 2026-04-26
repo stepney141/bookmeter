@@ -3,7 +3,7 @@
  * レイヤー単位の Error クラス + context.type で細分化する。
  */
 
-import { BaseError } from "../../../.libs/lib";
+import { BaseError } from "../../.libs/lib";
 
 import type { BiblioinfoErrorStatus } from "./types";
 

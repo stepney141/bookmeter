@@ -4,7 +4,7 @@
  * @link https://developers.google.com/books/docs/v1/reference/volumes/list?hl=en
  */
 
-import { Err, mapResult, mapResultErr } from "../../../.libs/lib";
+import { Err, mapResult, mapResultErr } from "../../.libs/lib";
 
 import { FetcherError, httpToFetcherError } from "./errors";
 

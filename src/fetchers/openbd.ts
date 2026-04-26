@@ -3,15 +3,15 @@
  * OpenBD のレスポンス型はこのファイル内に閉じる。
  */
 
-import { mapResult, mapResultErr } from "../../../.libs/lib";
-import { zip } from "../../../.libs/utils";
+import { mapResult, mapResultErr } from "../../.libs/lib";
+import { zip } from "../../.libs/utils";
 
 import { httpToFetcherError } from "./errors";
 
 import type { FetcherError } from "./errors";
 import type { HttpClient } from "./httpClient";
 import type { BiblioinfoErrorStatus, FetchResult } from "./types";
-import type { Result } from "../../../.libs/lib";
+import type { Result } from "../../.libs/lib";
 import type { BookList } from "../domain/book";
 
 type OpenBDSummary = {

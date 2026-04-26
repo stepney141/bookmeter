@@ -4,7 +4,7 @@
  */
 
 import type { FetcherError } from "./errors";
-import type { Result } from "../../../.libs/lib";
+import type { Result } from "../../.libs/lib";
 import type { Book } from "../domain/book";
 
 export const BIBLIOINFO_SOURCES = ["OpenBD", "ISBNdb", "Amazon", "NDL", "GoogleBooks"] as const;

@@ -7,8 +7,8 @@ import path from "path";
 
 import { config } from "dotenv";
 
-import { getNodeProperty, $x, waitForXPath } from "../../../.libs/pptr-utils";
-import { sleep } from "../../../.libs/utils";
+import { getNodeProperty, $x, waitForXPath } from "../../.libs/pptr-utils";
+import { sleep } from "../../.libs/utils";
 import { matchASIN } from "../domain/isbn";
 
 import { BOOKMETER_BASE_URI, XPATH } from "./constants";
