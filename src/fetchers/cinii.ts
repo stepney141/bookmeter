@@ -4,8 +4,8 @@
  * @link https://support.nii.ac.jp/ja/cib/api/b_opensearch
  */
 
-import { Ok, mapResultErr } from "../../.libs/lib";
-import { sleep } from "../../.libs/utils";
+import { Ok, mapResultErr } from "../libs/lib";
+import { sleep } from "../libs/utils";
 import { CINII_TARGET_TAGS } from "../domain/book";
 import { isAsin } from "../domain/isbn";
 

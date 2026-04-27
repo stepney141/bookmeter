@@ -3,7 +3,7 @@
  * ISBNdb のレスポンス型はこのファイル内に閉じる。
  */
 
-import { mapResult, mapResultErr } from "../../.libs/lib";
+import { mapResult, mapResultErr } from "../libs/lib";
 
 import { httpToFetcherError } from "./errors";
 

@@ -3,7 +3,7 @@
  * index.ts はこれらを組み合わせるオーケストレーターに徹する。
  */
 
-import { exportFile } from "../../.libs/utils";
+import { exportFile } from "../libs/utils";
 import { CSV_EXPORT_COLUMNS } from "../db/constants";
 import { buildCsvFileName, getPrevBookList } from "../db/dataLoader";
 import { isBookListDifferent } from "../domain/book";

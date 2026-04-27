@@ -7,7 +7,7 @@
 
 import { XMLParser } from "fast-xml-parser";
 
-import { Ok, mapResultErr } from "../../.libs/lib";
+import { Ok, mapResultErr } from "../libs/lib";
 import { isIsbn10 } from "../domain/isbn";
 
 import { httpToFetcherError } from "./errors";

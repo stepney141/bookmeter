@@ -1,5 +1,5 @@
 {
-  "include": ["**/*", ".libs/**/*.d.ts"],
+  "include": ["**/*", "src/libs/**/*.d.ts"],
   "exclude": [
     "node_modules",
     "eslint.config.mjs"

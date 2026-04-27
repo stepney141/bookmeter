@@ -8,11 +8,11 @@ import fs from "node:fs";
 import { initializeApp } from "firebase/app";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 
-import { Err, Ok } from "../../.libs/lib";
+import { Err, Ok } from "../libs/lib";
 
 import { DbError } from "./errors";
 
-import type { Result } from "../../.libs/lib";
+import type { Result } from "../libs/lib";
 
 export interface RemoteUploader {
   upload(localFilePath: string): Promise<Result<void, DbError>>;

@@ -6,12 +6,12 @@
 
 import axios from "axios";
 
-import { fromPromise } from "../../.libs/lib";
+import { fromPromise } from "../libs/lib";
 
 import { HttpError } from "./errors";
 
 import type { FetcherSource } from "./errors";
-import type { Result } from "../../.libs/lib";
+import type { Result } from "../libs/lib";
 import type { AxiosInstance, AxiosRequestConfig } from "axios";
 
 export type HttpClientOptions = {

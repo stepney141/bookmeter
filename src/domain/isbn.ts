@@ -3,7 +3,7 @@
  * 外部環境（DB・HTTP・ブラウザ）に依存しない純粋関数と型定義を提供する。
  */
 
-import type { Brand } from "../../.libs/lib";
+import type { Brand } from "../libs/lib";
 
 export type ISBN10 = Brand<string, "ISBN10">;
 export type ISBN13 = Brand<string, "ISBN13">;
