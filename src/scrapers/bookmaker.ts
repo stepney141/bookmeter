@@ -3,10 +3,6 @@
  * ログイン・ページ巡回・ISBN/ASIN 抽出を行う。
  */
 
-import path from "path";
-
-import { config } from "dotenv";
-
 import { matchASIN } from "../domain/isbn";
 import { getNodeProperty, $x, waitForXPath } from "../libs/pptr-utils";
 import { sleep } from "../libs/utils";
@@ -17,9 +13,21 @@ import type { Book, BookList } from "../domain/book";
 import type { ASIN, ISBN10 } from "../domain/isbn";
 import type { Browser, Page } from "puppeteer";
 
-config({ path: path.join(__dirname, "../../../.env") });
-const bookmeter_username = process.env.BOOKMETER_ACCOUNT!.toString();
-const bookmeter_password = process.env.BOOKMETER_PASSWORD!.toString();
+type BookmeterCredentials = {
+  username: string;
+  password: string;
+};
+
+function getBookmeterCredentials(): BookmeterCredentials {
+  const username = process.env.BOOKMETER_ACCOUNT;
+  const password = process.env.BOOKMETER_PASSWORD;
+
+  if (username === undefined || password === undefined) {
+    throw new Error("BOOKMETER_ACCOUNT and BOOKMETER_PASSWORD must be defined in .env before login");
+  }
+
+  return { username, password };
+}
 
 export class Bookmaker {
   #browser: Browser;
@@ -55,6 +63,7 @@ export class Bookmaker {
   }
 
   async login(): Promise<this> {
+    const credentials = getBookmeterCredentials();
     const page = await this.#browser.newPage();
 
     await page.setRequestInterception(true);
@@ -76,8 +85,8 @@ export class Bookmaker {
     const passwordInputHandle = await $x(page, XPATH.login.passwordInput);
     const loginButtonHandle = await $x(page, XPATH.login.loginButton);
 
-    await accountNameInputHandle[0].type(bookmeter_username);
-    await passwordInputHandle[0].type(bookmeter_password);
+    await accountNameInputHandle[0].type(credentials.username);
+    await passwordInputHandle[0].type(credentials.password);
 
     await Promise.all([
       page.waitForNavigation({
