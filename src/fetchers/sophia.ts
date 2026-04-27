@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 
-import { extractTextFromPDF } from "../libs/utils";
 import { convertISBN10To13, isIsbn10, REGEX_ISBN_GLOBAL } from "../domain/isbn";
+import { extractTextFromPDF } from "../libs/utils";
 
 import { MATH_LIB_BOOKLIST } from "./cinii";
 import { logFetcherError } from "./errors";

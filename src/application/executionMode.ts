@@ -8,8 +8,8 @@ import { hideBin } from "yargs/helpers";
 
 import { BaseError, Err, Ok } from "../libs/lib";
 
-import type { Result } from "../libs/lib";
 import type { OutputFilePath } from "../db/dataLoader";
+import type { Result } from "../libs/lib";
 import type { Argv } from "yargs";
 
 export const DEFAULT_BOOKMETER_USER_ID = "1003258";

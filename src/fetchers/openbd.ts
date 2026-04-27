@@ -11,8 +11,8 @@ import { httpToFetcherError } from "./errors";
 import type { FetcherError } from "./errors";
 import type { HttpClient } from "./httpClient";
 import type { BiblioinfoErrorStatus, FetchResult } from "./types";
-import type { Result } from "../libs/lib";
 import type { BookList } from "../domain/book";
+import type { Result } from "../libs/lib";
 
 type OpenBDSummary = {
   isbn: string;

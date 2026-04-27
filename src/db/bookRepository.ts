@@ -12,9 +12,9 @@ import { DbError } from "./errors";
 import { wishTable, stackedTable } from "./schema";
 
 import type { DbClient } from "./client";
-import type { Result } from "../libs/lib";
 import type { Book, BookList } from "../domain/book";
 import type { ASIN, ISBN10 } from "../domain/isbn";
+import type { Result } from "../libs/lib";
 
 export interface BookRepository {
   load(tableName: "wish" | "stacked"): Result<BookList, DbError>;

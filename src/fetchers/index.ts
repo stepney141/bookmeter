@@ -3,8 +3,8 @@
  * フォールバックチェーンを宣言的に定義し、BookList を更新して返す。
  */
 
-import { PromiseQueue, randomWait, sleep } from "../libs/utils";
 import { isAsin, routeIsbn10 } from "../domain/isbn";
+import { PromiseQueue, randomWait, sleep } from "../libs/utils";
 
 import { shouldFetchBibliographicData, shouldFetchLibraryHoldings } from "./cachePolicy";
 import { searchLibraries } from "./cinii";
