@@ -1,0 +1,29 @@
+
+> bookmeter@1.0.0 stacked
+> tsx src/index.ts full stacked
+
+Execution plan => mode=full, target=stacked, forceRefresh=false, scrape=remote(login=true), phases=compare -> fetchBiblio -> crawlDescriptions -> persist -> exportCsv -> uploadDb
+Loading previous book list from SQLite database (table: stacked)
+Loaded 1799 cached books from SQLite.
+Login Completed!
+Scraping Started!
+scanning page 1
+scanning page 2
+scanning page 3
+scanning page 4
+scanning page 5
+scanning page 6
+scanning page 7
+scanning page 8
+scanning page 9
+scanning page 10
+scanning page 11
+scanning page 12
+scanning page 13
+scanning page 14
+scanning page 15
+scanning page 16
+scanning page 17
+scanning page 18
+Cannot find any differences between the local and remote. The process will be aborted...
+The processs took 36 seconds
