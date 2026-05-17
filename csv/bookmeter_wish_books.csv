@@ -1,4 +1,7 @@
 bookmeter_url,isbn_or_asin,book_title,author,publisher,published_date,exist_in_sophia,exist_in_utokyo,sophia_opac,utokyo_opac,sophia_mathlib_opac
+https://bookmeter.com/books/18204345,4909658580,欧米圏デジタル・ヒューマニティーズの基礎知識,一般財団法人人文情報学研究所／監修 小風尚樹／編著 小川潤／編著 纓田宗紀／編著 長野壮一／編著 ほか,文学通信,20210726,Yes,Yes,https://www.lib.sophia.ac.jp/opac/opac_openurl?ncid=BC08644672,https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_openurl?ncid=BC08644672,
+https://bookmeter.com/books/13768842,4798158461,絵で見てわかるITインフラの仕組み,"山崎,泰史 三縄,慶子 畔勝,洋平 小田,圭二",翔泳社,201906,No,Yes,,https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_openurl?ncid=BB28512269,
+https://bookmeter.com/books/15373413,4297112655,システム障害対応の教科書 = A GUIDEBOOK TO SYSTEM FAILURE RESPONSE,"木村,誠明",技術評論社,202004,No,No,,,
 https://bookmeter.com/books/9110846,4875864159,たんときれいに召し上がれ : 美食文学精選,"津原,やすみ,1964-2022",芸術新聞社,201501,No,No,,,
 https://bookmeter.com/books/19150136,4771035660,ライブハウスの人類学 : 音楽を介して「生きられる場」を築くこと,"生井,達也,1984-",晃洋書房,202201,Yes,Yes,https://www.lib.sophia.ac.jp/opac/opac_openurl?ncid=BC12253511,https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_openurl?ncid=BC12253511,
 https://bookmeter.com/books/22588160,4065394309,内務省 : 近代日本に君臨した巨大官庁 2772 (講談社現代新書),内務省研究会,講談社,202504,Yes,Yes,https://www.lib.sophia.ac.jp/opac/opac_openurl?ncid=BD11471150,https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_openurl?ncid=BD11471150,
